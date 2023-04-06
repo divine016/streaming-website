@@ -1,0 +1,87 @@
+.footer{
+    background: rgba(0, 0, 0, 1);
+    padding: 70px 0;
+    bottom: 0px;
+}
+.fot-cont{
+    max-width: 1190px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ol {
+    list-style: none;
+    
+}
+.footer-col{
+    width: 20%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: linear-gradient(144deg, rgb(20, 158, 250)0%, rgb(145, 27, 255)100%);
+    height: 2px;
+    width: 50px;
+}
+.footer-col ol li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ol li, .footer-col ol li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300px;
+    color: #bbb;
+    transition: all 0.4s ease-in-out;
+}
+.footer-col ol li a:hover, .footer-col ol li:hover{
+    color: #fff;
+    padding-left: 8px;
+}
+.footer-col .socials a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: rgba(145, 27, 255, 0.2);
+    border-radius: 50%;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    transition: 0.46s ease-in-out;
+}
+.footer-col .socials a:hover{
+    border-radius: 50%;
+    transform: scale(1.1);
+    border: 2px solid rgb(145, 27, 255);
+    background: #fff;
+    color:rgb(145, 27, 255) ;
+
+}
+@media(max-width:767px) {
+    .footer-col{
+        width: 25%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:574px) {
+    .footer-col{
+        width: 100%;
+        }
+}

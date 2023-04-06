@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+  }
+#movies{
+ background:rgba(0, 0, 0, 1) ;
+}
+.img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.img img{
+    width: 300px;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.img::after{
+    content: "";
+    width: 350px;
+}
+.img img:hover{
+    border: 2px solid rgb(20, 158, 250);
+    transform: scale(1.04);
+}
+#movies h2{
+    font-size: 35px;
+}

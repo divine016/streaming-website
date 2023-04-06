@@ -1,0 +1,108 @@
+.main{
+    width: 100%;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 1);
+    /* background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./FILM.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    
+    
+}
+.land{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:auto;
+    margin-top: 75px;
+}
+.land .lan{
+    margin: 50px;
+   
+    text-align: left;
+}
+.landins{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landings{
+/* display: flex; */
+/* flex-direction: column; */
+align-items: center;
+justify-content: center;
+    padding-top: 50px;
+    /* padding-top: 250px; */
+    /* text-align: left;    */
+}
+.lastt #last{
+    margin-top:100px ;
+}
+.lastt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landings p{
+    
+    font-size: 20px;
+    color: #fff;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+.landings h1{
+    color: #fff;
+    font-size: 45px;
+    padding: 0 20px;
+}
+
+button{
+    border: none;
+    font-size: 16px;
+    font-weight:bold;
+    background:var(--button-color);
+    color: var(--text-color);
+    padding: 10px 25px;
+    margin: 10px;
+    border-radius: 5px;  
+}
+@media (max-width:762px) {
+    .landings{
+        display: flex;
+        flex-direction: column;
+    }
+    .land .lan{
+        text-align: left ;
+    }
+    .landings h1{
+        font-size: 30px;
+        /* padding:0  105px; */
+    }
+    .landings p{
+        /* padding:0  105px;  */
+    }
+    .img a:first-child{
+        margin-top: 150px;
+    }
+    .land{
+        display: flex;
+        flex-direction: column;
+        /* padding:20px 40px; */
+    }
+    /* .main-img{
+        
+    } */
+    .main .landings .land img{
+        width: 100%;
+    }
+}
+@media (max-width:1000px){
+    .main-img{
+        width: 400px;
+    }
+    /* .land .lan{
+        margin: 25px;
+    } */
+}
