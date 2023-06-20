@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --button-color: linear-gradient(144deg, rgb(20, 158, 250)0%, rgb(145, 27, 255)100%);
+    --buttonlogo: ;
+    --text-color: #f7f4f4;
+   }
+/* ===============================styling for the  nav bar================================ */
+.nav{
+    /* color: var(--text-color); */
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+    height: 80px;
+    
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    
+     /* position: fixed;  */
+    top: 0;
+}
+.nav .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    margin:0 40px;
+}
+.nav #streamon a{
+    text-decoration: none;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+ .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+ .links  li{
+    font-size: 20px;
+   position: relative;
+    list-style: none;
+    position: relative;
+}
+.links li a{
+    color: rgba(255, 255, 255, 0.829);
+    text-decoration: none;
+}
+.links  li a:hover, .dropdown ul li a{
+    color:#fff;
+}
+.links  li::before, .dropdown ul li::before{
+    content: '';
+    position: absolute;
+    height: 2PX;
+    width: 0;
+    background: linear-gradient(144deg, rgb(20, 158, 250)0%, rgb(145, 27, 255)100%);
+    left: 0;
+    bottom: -10px;
+}
+.links  li:hover::before, .dropdown ul li:hover::before{
+    width: 100%;
+}
+.links  li a:hover, .dropdown ul li a:hover{
+    font-size: 22px;
+}
+button{
+    border: none;
+    font-size: 16px;
+    font-weight:bold;
+    background:var(--button-color);
+    color: var(--text-color);
+    padding: 10px 25px;
+    margin: -10px;
+    border-radius: 5px;  
+}
+button:hover{
+    transform: scale(1.09);
+}
+button a{
+    text-decoration: none;
+    color: #fff;
+}
+/* .links input{
+    padding: 10px;
+    border-radius: 25px;
+    background: none;
+    border: 2px solid #fff;
+} */
+
+.nav h1{
+    padding: 10px 70px;
+    font-size: 35px;
+    /* color:var(--buttonlogo) ; */
+    /* background-color: #f3ec78; */
+    background-image: linear-gradient(144deg, rgb(20, 158, 250)0%, rgb(145, 27, 255)100%);
+    /* background-size: 100%; */
+    -webkit-background-clip: text;
+    /* -moz-background-clip: text; */
+    -webkit-text-fill-color: transparent; 
+    /* -moz-text-fill-color: transparent; */
+    font-variant: small-caps; 
+}
+.nav button{
+    margin-right: 70px
+}
+/* ==========dropdown menu class============== */
+.dropdown ol li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.dropdown ol li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.829);
+    text-decoration: none;
+   
+}
+.dropdown.open{
+    position: fixed;
+    top: 7;
+    height: 240px;
+}
+.dropdown{
+    z-index: 999;
+    position: absolute;
+    right: 1rem;
+    top: 60px;
+    height: 0;
+    width: 250px;
+    background: linear-gradient(144deg, rgba(131, 201, 247, 0.1)0%, rgba(177, 110, 240, 0.1)100%);;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);    
+    }
+    .dropdown ol li{
+    padding: 20px 0.7rem 20px 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .dropdown  .action-btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    }
+    /* =================sub menues============== */
+    .sub-ul li{
+        float: left;
+        width: 200px;
+        text-align: center;
+        height: 40px;
+    }
+@media (max-width:992px) {
+    .nav h1{
+        padding: 10px 50px;
+    }
+    .nav button{
+        margin-right: 30px;
+        padding: 8px;
+    }
+    .nav .links, .nav button .action-btn{
+        display: none;
+    } 
+    .nav .toggle_btn{
+        display: block;
+    }
+    /* .nav .toggle_btn{
+        margin: 0 8px;
+    } */
+}
+@media(max-width:576px){
+    .dropdown{
+        left: 2rem;
+        width: unset;
+    }
+    .nav{
+        width:0%;
+    }
+    /* .nav .toggle_btn{
+        margin: 0 8px;
+    } */
+}
