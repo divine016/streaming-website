@@ -9,7 +9,7 @@
  }
  ul li a{
     display: block;
-    padding: 20px 25px;
+    padding: 25px 25px;
     text-align: center;
  }
  ul li ul.dropdown1 li{
@@ -20,7 +20,7 @@
     position: absolute;
     z-index: 999;
     display: none;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 1);
     box-shadow: 0 10px 20px rgb(65, 65, 65),
     0 10px 10px rgb(184, 183, 183);;
  }
